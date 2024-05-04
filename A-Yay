@@ -1,0 +1,12 @@
+word = list(input())
+index = int(0)
+if word[0] == word[1]:
+    for i in range(len(word)):
+        if word[i] != word[i + 1]:
+            index = i+2
+            break
+elif word[0] != word[2]:
+    index = 1
+else:
+    index = 2
+print(index)

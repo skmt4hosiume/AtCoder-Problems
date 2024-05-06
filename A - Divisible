@@ -1,0 +1,9 @@
+N,K = map(int,input().split())
+Alist = list(map(int,input().split()))
+ans = list()
+for i in range(N):
+    if Alist[i] % K == 0:
+        ans.append(str(int(Alist[i] / K)))
+    else :
+        continue
+print(" ".join(ans))

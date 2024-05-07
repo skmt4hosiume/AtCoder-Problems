@@ -1,0 +1,9 @@
+thema = list(input())
+typing = list(input())
+themaindex = int(0)
+ansindex = list()
+for i in range(len(typing)):
+    if typing[i] == thema[themaindex]:
+        ansindex.append(i + 1)
+        themaindex += 1
+print(*ansindex)

@@ -1,0 +1,8 @@
+N, Q = map(int,input().split())
+Tlist = list(map(int,input().split()))
+anslist = [1] * N
+
+for j in Tlist:
+    anslist[j-1] = 1 - anslist[j-1]
+
+print(sum(anslist))

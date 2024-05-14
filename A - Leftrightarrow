@@ -1,0 +1,11 @@
+def LRarrow(words):
+    if words[0] != "<":
+        print("No")
+    elif not all (char == "=" for char in words[1:-1]):
+        print("No")
+    elif words[-1] != ">":
+        print("No")
+    else :
+        print("Yes")
+words = input("")
+LRarrow(words)

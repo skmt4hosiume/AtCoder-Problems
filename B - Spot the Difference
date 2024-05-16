@@ -1,0 +1,15 @@
+def find_difference(A, B):
+
+  for i, (row_a, row_b) in enumerate(zip(A, B)):
+    for j, (char_a, char_b) in enumerate(zip(row_a, row_b)):
+      if char_a != char_b:
+        return i + 1, j + 1
+  return None
+
+N = int(input())
+A = [input() for _ in range(N)]
+B = [input() for _ in range(N)]
+
+row, col = find_difference(A, B)
+
+print(row,col)

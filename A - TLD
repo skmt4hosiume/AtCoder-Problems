@@ -1,0 +1,4 @@
+def extract_substring(s):
+    return s[s.rfind(".") + 1:]
+s = input("")
+print(extract_substring(s))

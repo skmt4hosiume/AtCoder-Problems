@@ -1,0 +1,2 @@
+N = int(input())
+print("L{0}ng".format("o"*N))

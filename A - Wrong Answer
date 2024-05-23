@@ -1,0 +1,6 @@
+A, B = map(int,input().split())
+sum = int(A + B)
+if sum == 0:
+    print("1")
+elif sum != 0:
+    print("0")

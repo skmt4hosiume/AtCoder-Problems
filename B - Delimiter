@@ -1,0 +1,8 @@
+NList = []
+N = int(-1)
+while N != 0:
+  N = int(input())
+  NList.append(N)
+NList.reverse()
+for i in NList:
+  print(i)

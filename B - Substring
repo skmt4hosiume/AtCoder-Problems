@@ -1,0 +1,7 @@
+AnsList =[]
+Text = input()
+for i in range(len(Text)):
+  for j in range(1, len(Text) - i + 1):
+    AnsList.append(Text[i:i + j])
+AnsList = list(set(AnsList))
+print(len(AnsList))

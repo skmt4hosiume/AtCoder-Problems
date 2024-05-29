@@ -1,0 +1,7 @@
+N = int(input())
+A, B = 0, 0
+for _ in range(N):
+    Ai, Bi = map(int, input().split())
+    A += Ai
+    B += Bi
+print("Takahashi" if A > B else "Aoki" if A < B else "Draw")

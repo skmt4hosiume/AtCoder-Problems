@@ -1,0 +1,5 @@
+check = str(input(""))
+if check.istitle() == True:
+    print("Yes")
+elif check.istitle() == False:
+    print("No")

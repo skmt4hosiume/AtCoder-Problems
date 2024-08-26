@@ -1,0 +1,10 @@
+N = int(input())
+Slist = []
+Clist = []
+for _ in range(N):
+    S,C = input().split()
+    Slist.append(S)
+    Clist.append(int(C))
+Slist.sort()
+Index = (int(sum(Clist) % N))
+print(Slist[Index])

@@ -1,0 +1,10 @@
+Alen, Blen = map(int,input().split())
+AList = list(map(int, input().split()))
+BList = list(map(int,input().split()))
+SList = AList + BList
+SList = sorted(SList)
+for i in range(Alen + Blen - 1):
+    if SList[i] in AList and SList[i + 1] in AList:
+        print("Yes")
+        exit()
+print("No")

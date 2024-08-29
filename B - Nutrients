@@ -1,0 +1,13 @@
+Number, Category = map(int,input().split())
+Task = list(map(int,input().split()))
+Food = [list(map(int,input().split())) for _ in range(Number)]
+
+for j in range(Category):
+    s = 0
+    for i in range(Number):
+        s += Food[i][j]
+    if s < Task[j]:
+        print("No")
+        exit()
+
+print("Yes")

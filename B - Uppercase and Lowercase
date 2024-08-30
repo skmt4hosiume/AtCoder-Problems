@@ -1,0 +1,8 @@
+words = input()
+
+cntS = int(sum(map(str.islower, words)))
+cntB = int(sum(map(str.isupper, words)))
+if cntS > cntB:
+    print(words.lower())
+else:
+    print(words.upper())

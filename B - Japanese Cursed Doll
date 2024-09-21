@@ -1,0 +1,10 @@
+N, T, P= map(int,input().split())
+L = list(map(int,input().split()))
+S = int()
+
+LSort = sorted(L, reverse = True)
+if T <= LSort[P-1]:
+    S = 0
+else:
+    S = (T - LSort[P-1])
+print(S)

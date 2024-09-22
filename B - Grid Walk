@@ -1,0 +1,31 @@
+def main():
+    h, w = map(int, input().split())
+    si, sj = map(int, input().split())
+    si -= 1
+    sj -= 1
+
+    c = []
+    for _ in range(h):
+        row = list(input())
+        c.append(row)
+
+    x = input()
+
+    for o in x:
+        ni, nj = si, sj
+        if o == "L":
+            nj -= 1
+        elif o == "R":
+            nj += 1
+        elif o == "U":
+            ni -= 1
+        else:
+            ni += 1
+
+        if 0 <= ni < h and 0 <= nj < w and c[ni][nj] == ".":
+            si, sj = ni, nj
+
+    print(si + 1, sj + 1)
+
+if __name__ == "__main__":
+    main()

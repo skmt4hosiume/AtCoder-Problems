@@ -1,0 +1,9 @@
+N = int(input())
+Alist = list(map(int, input().split()))
+
+sortedAlist = sorted(Alist, reverse = True)
+
+secondMax = sortedAlist[1]
+result = Alist.index(secondMax)
+
+print(result+1)

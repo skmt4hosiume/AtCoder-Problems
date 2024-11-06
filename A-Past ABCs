@@ -1,0 +1,4 @@
+N = int(input())
+Point = list(map(int,input().split()))
+PointSum = sum(Point)
+print(PointSum * -1)
